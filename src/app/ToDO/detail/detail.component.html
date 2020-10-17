@@ -1,0 +1,44 @@
+ <!-- <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>To do ID</mat-label>
+      <input matInput placeholder="e.g 1,2,3" name="name" [(ngModel)]="name">
+      <br>
+      <p>id:s{{name}}</p>
+      
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Date</mat-label>
+        <input matInput placeholder="e.g 29/12/2020">
+        
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Title</mat-label>
+        <input matInput placeholder="e.g to do work for organisation">
+        
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>description</mat-label>
+        <input matInput placeholder="e.g i have to do work in no time">
+        
+      </mat-form-field>
+  
+  </form>
+   -->
+   
+  <mat-list role="list">
+    <li *ngFor="let detail of details" >
+      <table>
+        <td>
+          <tr>
+            Id: {{detail.id}}, 
+            Date: {{detail.date}},  
+            Title: {{detail.title}},
+            description:{{detail.description}}<br>
+          </tr>
+        </td>
+      </table>
+     </li> 
+    
+  </mat-list>
+  
+  
